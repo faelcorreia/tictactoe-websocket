@@ -1,5 +1,5 @@
 module.exports.controller = function(app) {
-    app.get('/', function(req, res) {
-        console.log('asd')
+    app.get('/api', function(req, res) {
+        res.sedStatus(200)
     })
 }
