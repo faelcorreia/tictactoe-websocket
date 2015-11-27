@@ -1,3 +1,19 @@
 <div>
-	<span>{{hello}}</span>
+	<form ng-submit="sendChat()">
+	<div>
+		<label>Nick
+			<input ng-disabled="user.joined" type="text" ng-model="user.name"></input>
+			<button ng-disabled="user.joined" ng-click="joinRoom()" type="submit">Join</button>
+		</label>
+	</div>
+	<div>
+		<textarea readonly ng-disabled="!user.joined" rows="4" cols="50" ng-model="user.console"></textarea>
+	</div>
+	<div>
+		<label>
+			<input ng-disabled="!user.joined" type="text" ng-model="user.chat"></input>
+			<button ng-disabled="!user.joined" type="submit">Send</button>
+		</label>
+	</div>
+	</form>
 </div>

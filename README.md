@@ -1,6 +1,6 @@
-# Simple Angular Node Project
+# TicTacToe WebSocket
 
-Default project to simplify project creation.
+Simple TicTacToe using WebSocket.
 
 Install node packages.
 ````

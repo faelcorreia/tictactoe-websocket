@@ -17,10 +17,12 @@ var public_dir = 'public/'
 
 var vendors = {
     scripts: [
+        bower_dir + 'requirejs/require.js',
         bower_dir + 'angular/angular.js',
         bower_dir + 'angular-i18n/angular-locale_pt-br.js',
         bower_dir + 'angular-resource/angular-resource.js',
-        bower_dir + 'angular-ui-router/release/angular-ui-router.js'
+        bower_dir + 'angular-ui-router/release/angular-ui-router.js',
+        bower_dir + 'angular-socket-io/socket.js'
     ]
 }
 

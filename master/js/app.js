@@ -1,8 +1,9 @@
 'use strict';
 
-angular.module('simple-angular-node-project', [
+angular.module('tictactoe-websocket', [
     'ngResource',
-    'ui.router'
+    'ui.router',
+    'btford.socket-io'    
 ])
 
 .config(['$stateProvider', '$urlRouterProvider',
