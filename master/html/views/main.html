@@ -7,12 +7,12 @@
 		</label>
 	</div>
 	<div>
-		<textarea readonly ng-disabled="!user.joined" rows="4" cols="50" ng-model="user.console"></textarea>
+		<textarea readonly show-tail ng-disabled="!user.joined" rows="10" cols="50" ng-model="user.console"></textarea>
 	</div>
 	<div>
 		<label>
-			<input ng-disabled="!user.joined" type="text" ng-model="user.chat"></input>
-			<button ng-disabled="!user.joined" type="submit">Send</button>
+			<input ng-disabled="!user.joined" type="text" ng-model="user.chat" ng-keyup="$event.keyCode == 13 && sendChat()"></input>
+			<button ng-disabled="!user.joined" type="button" ng-click="sendChat()">Send</button>
 		</label>
 	</div>
 	</form>

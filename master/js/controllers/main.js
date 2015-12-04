@@ -11,6 +11,7 @@
         }
 
         $scope.sendChat = function() {
+        	if ($scope.user.chat && $scope.user.chat != '')
             ChatMan.emit('talk', $scope.user.chat)
             $scope.user.chat = ''
         }
